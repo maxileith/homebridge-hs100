@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "TP-Link HS100",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -9,7 +9,32 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "TP-Link HS100"
+      },
+      "devices": {
+        "title": "Outlets",
+        "type": "array",
+        "required": true,
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": true,
+          "default": [],
+          "properties": {
+            "name": {
+              "tittle": "name",
+              "type": "string",
+              "required": true,
+              "placehoder": "Computer"
+            },
+            "ip": {
+              "tittle": "name",
+              "type": "string",
+              "required": true,
+              "placehoder": "10.42.42.42"
+            }
+          }
+        }
       }
     }
   }
